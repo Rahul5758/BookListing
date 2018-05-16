@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- A CardView that contains information about the book-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_book_card"
+    android:layout_gravity="center"
+    android:layout_height="250dp"
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:src="@color/cardview_dark_background"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="#222"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="Book Title" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:maxLines="3"
+            android:padding="10dp"
+            android:textColor="#666"
+            android:textSize="14sp"
+            tools:text="Author XYZ" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
